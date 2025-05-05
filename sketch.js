@@ -76,7 +76,7 @@ function draw() {
     fill(0);
     textSize(32);
     textAlign(CENTER);
-    text("You escaped!", width / 2, height / 2);
+    text("You caught Ahmed! ⚡", width / 2, height / 2);
     noLoop();
   }
 }
@@ -144,6 +144,7 @@ function drawMazeWithShadows() {
     for (let x = 0; x < cols; x++) {
       if (currentMaze[y][x] === 1) {
         fill(180, 0, 0, 100);
+        noStroke();
         rect(x * tileSize + 4, y * tileSize + 4, tileSize, tileSize); // shadow
         fill(100);
         rect(x * tileSize, y * tileSize, tileSize, tileSize); //tiles
